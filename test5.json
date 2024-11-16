@@ -1,0 +1,20 @@
+{
+    "states": ["q0"],
+    "alphabet": ["a", "b"],
+    "in_stack": ["a", "b", "Z"],
+    "rules": [
+      ["q0", "a", "Z", "q0", "aZ"],
+      ["q0", "b", "Z", "q0", "bZ"],
+      ["q0", "a", "a", "q0", "aa"],
+      ["q0", "b", "a", "q0", "EPS"],
+
+      ["q0", "EPS", "Z", "q0", "EPS"],
+
+      ["q0", "a", "b", "q0", "EPS"],
+
+      ["q0", "b", "b", "q0", "bb"]
+    ],
+    "start": "q0",
+    "start_stack": "Z",
+    "end": "q0"
+  }

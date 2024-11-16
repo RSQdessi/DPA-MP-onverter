@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ДМПА Проверка</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <h1>ДМПА</h1>
+    <label for="fileInput">Загрузить JSON-файл с ДМПА:</label>
+    <input type="file" id="fileInput" accept=".json">
+    
+    <button class = "nextStep" id="toLab6">LAB №6
+        <img class = "imgStep" src="icons8-стрелка-вправо-в-круге-100.png" width="50" height="50">
+    </button><br><br>
+    
+    <div id="machineInfo"></div>
+    <div id="transitionTable"></div>
+
+    <label for="chainInput">Введите цепочку для проверки:</label>
+    <input type="text" id="chainInput">
+    <button id="checkButton" disabled>Проверить</button>
+
+    <div class="log" id="log"></div>
+
+    <script src="scripts/script.js"></script>
+        
+   
+</body>
+</html>
